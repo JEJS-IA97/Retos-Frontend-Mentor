@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top -250px left -350px, bottom -250px right -350px; 
+    background-size: 550px 550px;  
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    width: 320px;
+    height: 370px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageTop{
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 150px;
+}
+
+.profileImage{
+    background-image: url(./images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 105px;
+    height: 105px;
+    border: 5px solid white; 
+    border-radius: 50%;
+    position: absolute;
+    top: 85px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.profile .name-year {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+
+.profile .name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile .year {
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profile .city {
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.separator{
+    background-color: hsl(227, 10%, 90%);
+    width: 320px;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.networks{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 35px;
+    line-height: 20px;
+}
+
+.networks .network1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.networks .network1 .numberF{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.networks .network1 .follow{
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+}
+
+.networks .network2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(229, 23%, 23%);
+
+}
+
+.networks .network2 .numberL{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.networks .network2 .like{
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+}
+
+.networks .network3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.networks .network3 .numberP{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.networks .network3 .photo{
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 1px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body{
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top -350px left -350px, bottom -350px right -350px; 
+    background-size: 750px 750px;  
+    background-repeat: no-repeat;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    body{
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top -500px left -200px, bottom -500px right -200px; 
+    background-size: 850px 850px;  
+    background-repeat: no-repeat;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    body{
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top -450px left -150px, bottom -500px right -150px; 
+    background-size: 900px 900px;  
+    background-repeat: no-repeat;
+    }
+  }
