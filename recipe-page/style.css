@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/static/Outfit-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.recipe{
+    width: 375px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 375px;
+    height: 175px;
+}
+
+.omelette{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-family: 'Young Serif';
+    color: hsl(24, 5%, 18%);
+}
+
+p{
+    font-family: 'Outfit';
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+.time{
+    width: 310px;
+    height: 200px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit' ;
+    padding-bottom: 20px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+ul li{
+    font-family: 'Outfit';
+    font-weight: 500;
+    color: hsl(30, 10%, 34%);
+    padding-bottom: 10px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+span{
+    font-family: 'Outfit';
+    font-weight: 700;
+    color: hsl(30, 10%, 34%);
+}
+
+h2{
+    font-family: 'Young Serif';
+    width: 400;
+    color: hsl(14, 45%, 36%);
+    padding-bottom: 20px;
+}
+
+ol{
+    font-family: 'Outfit';
+    font-weight: 500;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+ol li{
+    font-family: 'Outfit';
+    font-weight: 500;
+    color: hsl(30, 10%, 34%);
+    padding-bottom: 10px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+ol li::marker {
+    font-weight: bold; 
+    color: hsl(14, 45%, 36%);
+    font-family: 'Outfit';
+}
+
+.nutrition1{
+    padding-bottom: 35px;
+    padding-right: 15px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.calories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-left: 35px;
+}
+
+.protein{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 78px;
+    margin-left: 35px;
+}
+
+.carbs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 86px;
+    margin-left: 35px;
+}
+
+.fat{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 104px;
+    margin-left: 35px;
+}
+
+.valor{
+    font-family: 'Outfit';
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+.line {
+    height: 1px;
+    width: 315px;
+    background-color: hsl(0, 0%, 90%);
+    margin-bottom: 10px;
+}
+
+.line2 {
+    height: 1px;
+    width: 315px;
+    background-color: hsl(0, 0%, 90%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 1080px) {
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.recipe{
+    width: 740px;
+    height: 1710px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.omelette{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 660px;
+}
+
+img{
+    width: 660px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.time{
+    width: 660px;
+    height: 180px;
+}
+
+.line {
+    width: 660px;
+    margin-bottom: 0;
+    margin-top: -15px;
+}
+
+.line2 {
+    width: 660px;
+}
+
+.calories{
+    gap: 275px;
+}
+
+.protein{
+    gap: 282px;
+    padding-top: 5px;
+}
+
+.carbs{
+    gap: 292px;
+    padding-top: 5px;
+}
+
+.fat{
+    gap: 310px;
+    padding-top: 5px;
+}
+
+
+ol li{
+    padding-bottom: 15px;
+}
+
+ul li{
+    padding-bottom: 15px;
+}
+
+p{
+    margin-top: -10px;
+}
+
+
+
+}
